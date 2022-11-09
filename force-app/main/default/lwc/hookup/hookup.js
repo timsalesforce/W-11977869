@@ -17,14 +17,12 @@ export default class Hookup extends LightningElement {
         } catch (error) {
             console.log(`error ${error}`);
         } finally {
-            console.log('created');
             getRecordNotifyChange([{recordId: this.recordId}]);
         }
     }
 
     hookupPromise() {
         doUpdate({interactionId: this.recordId, billingAccountId: this.baValue}).then((result) => {
-            console.log('created');
             getRecordNotifyChange([{recordId: this.recordId}]);
         }).catch((error) => {
             console.log(`error ${error}`);
