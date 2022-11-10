@@ -1,5 +1,5 @@
 public with sharing class InteractionController {
-    private static final String LONG_RUNNING_SERVICE_URL = 'https://httpbin.org/get';
+    private static final String LONG_RUNNING_SERVICE_URL = 'https://httpbin.org/drip?delay=5&drip=2&numbytes=10';
 
     public InteractionController() {
 
